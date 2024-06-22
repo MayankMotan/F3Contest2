@@ -1,0 +1,102 @@
+:root{
+    --container-background:rgba(12, 14, 16, 1);
+    --search:rgba(39, 42, 48, 1);
+}
+body{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+#container{
+    width: 100%;
+    display: flex;
+    background-color: var(--container-background);
+}
+#left{
+    flex: 2;
+    text-align: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.quick-links > ol{
+    text-align: left;
+}
+.about > ol{
+    text-align: left;
+}
+#right{
+    flex:10;
+}
+nav{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav img{
+    width: 15%;
+}
+nav > input{
+    width: 90%;
+    margin-inline: 20px;
+    color:white;
+    height: 40px;
+    border: .2px solid black;
+    background-color: var(--search);
+    border-radius: 10px;
+}
+.banner{
+    width: 90%;
+    height: 250px;
+    margin: 15px 0px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login > button{
+    width: 100px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-inline: 10px;
+}
+#menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.dish {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+
+  .dish img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .dish-name {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 5px;
+  }
+  .dish-name div{
+    text-align: left;
+  }
